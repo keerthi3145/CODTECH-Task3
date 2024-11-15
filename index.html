@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeThoughts - Where Your Words Find Their Voice!</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\Through\styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <i data-lucide="pencil-line" class="logo-icon"></i>
+                    <span class="logo-text">CreativeThoughts</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link" data-nav="home">Home</a>
+                    <button class="btn-primary btn-start-writing">
+                        <i data-lucide="edit-3" class="icon-sm"></i>
+                        Write
+                    </button>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i data-lucide="sun" class="icon-sm theme-icon-light"></i>
+                        <i data-lucide="moon" class="icon-sm theme-icon-dark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app">
+        <div id="main-content">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Every great idea starts with a single thought.</h1>
+                    <p>What's yours today?</p>
+                </div>
+            </div>
+
+            <main class="posts-container">
+                <div class="posts-grid" id="posts-grid"></div>
+            </main>
+        </div>
+
+        <div id="editor" class="editor hidden">
+            <div class="editor-container">
+                <h2 class="editor-title">Create New Post</h2>
+                <form id="post-form" class="editor-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" required placeholder="Enter your post title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Cover Image URL</label>
+                        <input type="url" id="image" placeholder="Enter image URL">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea id="content" rows="12" required placeholder="Write your post content here..."></textarea>
+                    </div>
+
+                    <div class="editor-actions">
+                        <button type="button" id="cancel-edit" class="btn-secondary">Cancel</button>
+                        <button type="submit" class="btn-primary">
+                            <i data-lucide="save" class="icon-sm"></i>
+                            Publish
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--<footer class="footer">
+            <div class="footer-content">
+                <p>© 2024 ThoughtSpace. All rights reserved.</p>
+            </div>
+        </footer> -->
+    </div>
+
+    <script src="C:\Users\HP\Desktop\Through\theme.js"></script>
+    <script src="C:\Users\HP\Desktop\Through\posts.js"></script>
+    <script src="C:\Users\HP\Desktop\Through\editor.js"></script>
+    <script src="C:\Users\HP\Desktop\Through\main.js"></script>
+</body>
+</html>
